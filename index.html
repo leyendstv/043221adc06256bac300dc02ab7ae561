@@ -1,4 +1,4 @@
-V3
+V5
 <!doctype html>
 <html lang="en">
 
@@ -37,6 +37,16 @@ V3
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
+    <script>
+    const shareBtn = document.querySelector('.share-btn');
+    const shareOptions = document.querySelector('.share-options');
+
+    shareBtn.addEventListener('click', () => {
+        shareOptions.classList.toggle('active');
+    })
+    </script>
+    
 </head>
 <body>
   
@@ -88,73 +98,31 @@ V3
       <div class="container-fluid video-blog">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="row no-margin video-cover">
-                            <iframe title="Live" width="560" height="315" src="https://tv.vayapartidazo.com/videos/embed/229f0d06-009f-4c42-8615-edbc0ef9c8f7" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+                        <div class="container">
+        <button class="share-btn">
+            <i class="fas fa-share-alt"></i>
+        </button>
+        <div class="share-options">
+            <p class="title">share</p>
+            <div class="social-media">
+                <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+                <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+                <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+            </div>
+            <div class="link-container">
+                <p class="link">https://example.com/share</p>
+                <button class="copy-btn">copy</button>
+            </div>
+        </div>
+    </div>
+                        
+                            <iframe title="Live" style="width:100% !important;" height="515" src="https://tv.vayapartidazo.com/videos/embed/229f0d06-009f-4c42-8615-edbc0ef9c8f7" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
                             
-
-                            <div class="row no-margin video-title" bis_skin_checked="1">
-                                <h6><i class="fas fa-book"></i> 3 Comments</h6>
-                            </div>
-
-                            <div class="comment-container">
-                                <div class="comment-box row">
-                                    <div class="col-2 mghji">
-                                        <img src="assets/images/testimonial/member-01.jpg" alt="">
-                                    </div>
-                                    <div class="col-10 detaila">
-                                        <h6>Mr. Mical James</h6>
-                                        <small>Published on 19-06-2019</small>
-                                        <p>In this video, you will learn how to create a stylish appointment
-                                             form from scratch using HTML, CSS, and Bootstrap Download the Project</p>
-                                    </div>
-                                </div>
-                                <div class="comment-box row">
-                                        <div class="col-2 mghji">
-                                            <img src="assets/images/testimonial/member-01.jpg" alt="">
-                                        </div>
-                                        <div class="col-10 detaila">
-                                            <h6>Mr. Mical James</h6>
-                                            <small>Published on 19-06-2019</small>
-                                            <p>In this video, you will learn how to create a stylish appointment
-                                                 form from scratch using HTML, CSS, and Bootstrap Download the Project</p>
-                                        </div>
-                                    </div>
-                                    <div class="comment-box row">
-                                            <div class="col-2 mghji">
-                                                <img src="assets/images/testimonial/member-01.jpg" alt="">
-                                            </div>
-                                            <div class="col-10 detaila">
-                                                <h6>Mr. Mical James</h6>
-                                                <small>Published on 19-06-2019</small>
-                                                <p>In this video, you will learn how to create a stylish appointment
-                                                     form from scratch using HTML, CSS, and Bootstrap Download the Project</p>
-                                            </div>
-                                        </div>
-                            </div>
-
-                            
-                            <div class="row no-margin video-title" bis_skin_checked="1">
-                                    <h6><i class="fas fa-book"></i> Post Your Comment</h6>
-                                </div>
-
-                            <div class="comment-text ">
-                                <div class="form-row  row">
-                                    <input type="text" placeholder=" Enter Name" class="form-control form-control-sm">
-                                </div>
-                                <div class="form-row row">
-                                        <input type="text" placeholder="Enter Mobile number" class="form-control form-control-sm">
-                                </div>
-                                <div class="form-row row">
-                                        <input type="text" placeholder="Enter Email Address" class="form-control form-control-sm">
-                                </div>
-                                <div class="form-row row">
-                                        <textarea placeholder="Enter Comment"   rows="5" class="form-control form-control-sm"></textarea>
-                                 </div>
-                                 <div class="form-row row">
-                                       <button class="btn btn-danger">Post Comment</button>
-                                 </div>
-                            </div>
                         </div>
                                   
                     </div>
@@ -168,32 +136,164 @@ V3
 
 
   <!--####################### Quote Starts Here ###################-->
-  <div class="footer-ablove">
-    <div class="container">
-        <div class="row">
-            <p>Are you looking for a consultant for your Business
-                <button class="btn btn-default">Get Quote</button>
-            </p>
-        </div>
-    </div>
-</div>
+
+
    <!--####################### Footer Starts Here ###################-->
       <footer class="footer">
 
 
     </footer>
-    <div class="copy">
-            <div class="container">
-                <a href="https://www.smarteyeapps.com/">2022 &copy; All Rights Reserved
-                
-                
-            </div>
 
-        </div>
-        
-        <script data-cfasync="false" type="text/javascript" data-adel="atag" src="//achcdn.com/script/atg.js" czid="lo3gxxfgcj"></script>
+<script data-cfasync="false" type="text/javascript" data-adel="atag" src="//achcdn.com/script/atg.js" czid="lo3gxxfgcj"></script>
         
 </body>
+
+
+<style>
+
+
+.share-btn{
+    position: relative;
+    border: none;
+    background: #fff;
+    color: #ff7d7d;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    padding-top: 2.5px;
+    padding-right: 3px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.share-options{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform-origin: bottom left;
+    transform: scale(0);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 20px;
+    font-family: 'roboto';
+    transition: .5s;
+    transition-delay: .5s;;
+}
+
+.share-options.active{
+    transform: scale(1);
+    transition-delay: 0s;
+}
+
+.title{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    padding: 0 20px 3px 0;
+}
+
+.social-media{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.social-media-btn{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    line-height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.social-media-btn:nth-child(1){
+    background: #FFA654;
+}
+
+.social-media-btn:nth-child(2){
+    background: #25D366;
+}
+
+.social-media-btn:nth-child(3){
+    background: #E4405F;
+}
+
+.social-media-btn:nth-child(4){
+    background: #1DA1F2;
+}
+
+.social-media-btn:nth-child(5){
+    background: #1877F2;
+}
+
+.social-media-btn:nth-child(6){
+    background: #0A66C2;
+}
+
+.link-container{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.link{
+    width: 80%;
+    height: 100%;
+    line-height: 40px;
+    color: #000;
+}
+
+.copy-btn{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border: none;
+    height: 100%;
+    width: 30%;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.share-options.active .title,
+.share-options.active .social-media,
+.share-options.active .link-container{
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .5s;
+}
+</style>
 
 
 </html>
